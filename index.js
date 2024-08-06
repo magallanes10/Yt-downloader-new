@@ -2,7 +2,7 @@ const express = require('express');
 const { ytmp3, ytmp3v2, ytmp3v3 } = require('ruhend-scraper');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
